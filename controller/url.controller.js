@@ -37,7 +37,7 @@ export const protectedUrlShortner = async (req, res) => {
       const url = await URL.findOne({ short_url });
   
       if (url.short_url) {
-        // console.log(url.short_url);
+        console.log(url.short_url);
         res.redirect(url.original_url);
       } else {
         res.status(404).json({ error: 'Short URL not found' });

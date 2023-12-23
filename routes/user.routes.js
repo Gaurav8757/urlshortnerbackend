@@ -19,6 +19,7 @@ router.post('/homepage/urlshortner',  urlShortner.protectedUrlShortner);
 
 router.get('/homepage/:short_url',  urlShortner.shortUrl);
 
+
 // Logout functionality
 router.post('/logout',  authController.logout);
 
